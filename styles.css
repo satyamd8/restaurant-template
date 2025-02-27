@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+    transition: 0.5s;
+}
+
+body {
+    background: gainsboro;
+
+}
+
+header {
+    background: white;
+    opacity: 0.9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    padding: 0 30px;
+    position: fixed;
+    width:100%;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.01);
+    z-index: 100;
+    transition: 0.15s;
+    top: 0;
+}
+
+nav {
+    display: flex;
+    gap:50px;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    font-size: 22px;
+    font-weight: 650;
+    transition: 0.5s;
+}
+
+nav a:hover {
+    color: #775732;
+}
+
+main {
+    margin-top: 100px;
+}
+
+
+
+.hero {
+    margin-top: 0;
+    height: 100vh;
+    background-image: url('images/hero.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    color: white;
+    text-align: center;
+}
+
+.hero-text {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.hero-text h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+.hero-text p {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.hero-text button {
+    padding: 10px 20px;
+    font-size: 1em;
+    background: #ff6347;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.hero-text button:hover {
+    background: #ff4500;
+}
+
+
+
+
+footer {
+    position: relative;
+    bottom: 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer a {
+    margin: 0 5px;
+    text-decoration: none;
+    color: #ff6347;
+}
