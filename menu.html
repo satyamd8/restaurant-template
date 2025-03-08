@@ -5,9 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Restaurant | Menu</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
 </head>
 <body>
+    <!--Mobile-->
+    <input type="checkbox" id="menu">
+    <!--Mobile-->
     <header>
+        <h1>Restaurant</h1>
+        <!--Mobile-->
+        <label for="menu">
+            <div></div>
+            <div></div>
+            <div></div>
+        </label>
+        <!--Mobile-->
         <nav>
             <a href="index.html">Home</a>
             <a href="menu.html">Menu</a>
@@ -18,29 +30,69 @@
 
     <main>
         <section class="menu">
-            <h2>Menu</h2>
-            <ul>
-                <li>
-                    <h3>Breakfast</h3>
-                    <p>Delicious breakfast options</p>
-                </li>
-                <li>
-                    <h3>Lunch</h3>
-                    <p>Delicious lunch options</p>
-                </li>
-                <li>
-                    <h3>Dinner</h3>
-                    <p>Delicious dinner options</p>
-                </li>
-            </ul>
+            <div class="menu-section">
+                <h2>Our Menu</h2>
+            </div>
+            <div class="menu-grid">
+                <div class="menu-card">
+                    <strong><h2>Breakfast</h2></strong>
+                    <div class="menu-item">
+                        <h4>Classic Pancakes</h4>
+                        <span class="price">$12.99</span>
+                        <p>Fluffy pancakes served with maple syrup and butter</p>
+                    </div>
+                    <div class="menu-item">
+                        <h4>Eggs Benedict</h4>
+                        <span class="price">$14.99</span>
+                        <p>Poached eggs on English muffin with hollandaise sauce</p>
+                    </div>
+                </div>
+                
+                <div class="menu-card">
+                    <strong><h2>Lunch</h2></strong>
+                    <div class="menu-item">
+                        <h4>Grilled Chicken Salad</h4>
+                        <span class="price">$15.99</span>
+                        <p>Fresh greens with grilled chicken and house dressing</p>
+                    </div>
+                    <div class="menu-item">
+                        <h4>Burger Deluxe</h4>
+                        <span class="price">$16.99</span>
+                        <p>Angus beef burger with cheese and special sauce</p>
+                    </div>
+                </div>
+                
+                <div class="menu-card">
+                    <strong><h2>Dinner</h2></strong>
+                    <div class="menu-item">
+                        <h4>Grilled Salmon</h4>
+                        <span class="price">$24.99</span>
+                        <p>Fresh salmon with seasonal vegetables</p>
+                    </div>
+                    <div class="menu-item">
+                        <h4>Ribeye Steak</h4>
+                        <span class="price">$29.99</span>
+                        <p>12oz ribeye with garlic mashed potatoes</p>
+                    </div>
+                </div>
+            </div>
         </section>
     
         <section class="gallery">
-            <h2>Gallery</h2>
-            <div class="slides">
-                <img src="https://via.placeholder.com/150" alt="Food">
-                <img src="https://via.placeholder.com/150" alt="Food">
-                <img src="https://via.placeholder.com/150" alt="Food">
+            <div class="gallery-section">
+                <h2>Gallery</h2>
+            </div>
+            <div class="slider-container">
+                <div class="slider">
+                    <img src="/images/pancakes.jpg" alt="Pancakes">
+                    <img src="/images/eggs.jpg" alt="Eggs">
+                    <img src="/images/salad.jpg" alt="Salad">
+                    <img src="/images/burger.jpg" alt="Burger">
+                    <img src="/images/salmon.jpg" alt="Salmon">
+                    <img src="/images/steak.jpg" alt="Steak">
+                </div>
+                <button class="prev">&#10094;</button>
+                <button class="next">&#10095;</button>
             </div>
         </section>
     </main>
